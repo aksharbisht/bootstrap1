@@ -256,3 +256,26 @@ nav a {
         text-align: justify;
     }
 }
+
+/* For tablet */
+@media only screen and (min-width:600px) and (max-width:768px) {
+    .heroContent, .agencies, .publishersContent, .footerText,  .agenciesContent, .factsContent, .factCardContent, .whyUsContent, .workingContent, .advertisersContent {
+        padding: 5% 5%
+    }
+    .agenciesTop, .advertisersLeft, .publishersTop, .factsSub, .footerText, .workingSub, .agenciesSub, .publishersSub, .whySub {
+        width: 100%;
+    }
+    .adArrow {
+        display: none;
+    }
+    .factImage img {
+        height: 60px;
+    }
+    .map {
+        padding: 5% 5%;
+    }
+    .workCard {
+        margin-bottom: 20px;
+    }
+
+}
