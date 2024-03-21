@@ -22,14 +22,14 @@ nav a {
     color: white;
     font-size: 9px;
 }
-.signUp button {
+.signUpBtn button {
     border-radius: 40px;
-    padding: 8px 40px;
+    padding: 8px 30px;
     font-size: 12px;
     font-weight: 100;
 }
-.lang a {
-    font-size: 12px;
+.language {
+    font-size: 14px;
 }
 .heroMainText {
     width: 55%;
@@ -192,11 +192,19 @@ nav a {
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
-    .hero {
-        /* background-image: none; */
-    }
-    .heroContent {
+
+    .heroContent, .agencies, .publishersContent, .footerText,  .agenciesContent, .factsContent, .factCardContent, .whyUsContent, .workingContent {
         padding: 10px 10px;
+    }
+    .logoImg {
+        display: none;
+    }
+    .signUpBtn button {
+        margin-top: 10px;
+        border-radius: 2px;
+        padding: 2px 5px;
+        font-size: 12px;
+        font-weight: 100;
     }
     .heroMainText {
         width: 100%;
@@ -209,14 +217,8 @@ nav a {
         box-shadow: none;
         margin-bottom: 10px;
     }
-    .whyUsContent {
-        padding: 10px 10px;
-    }
-    .workingContent {
-        padding: 10px 10px;
-    }
     .workRow {
-        width: 90%;
+        width: 85%;
         margin: auto;
     }
     .workCard {
@@ -228,6 +230,7 @@ nav a {
         flex-direction: column;
     }
     .stores {
+        text-align: center;
         padding-bottom: 20px;
     }
     .advertisementsRight {
@@ -238,18 +241,6 @@ nav a {
     }
     .adArrow {
         display: none;
-    }
-    .agencies, .publishersContent {
-        padding: 10px 10px;
-    }
-    .agenciesContent {
-        padding: 10px 10px;
-    }
-    .factsContent {
-        padding: 10px 10px;
-    }
-    .factCardContent {
-        padding-bottom: 20px;
     }
     .factsLine {
         width: 50%;
