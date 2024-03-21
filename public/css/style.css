@@ -89,6 +89,7 @@ nav a {
 }
 
 .workCard {
+    background-color: white;
     height: 120px;
     width: 120px;
     margin-left: 20px;
@@ -122,9 +123,11 @@ nav a {
 .adArrow {
     padding-right: 120px;
 }
+.agencies {
+    background-color: #f6f6f6;
+}
 .agenciesContent {
     padding: 80px 264px;
-    background-color: #f6f6f6;
 }
 .agenciesTop {
     width: 60%;
@@ -185,4 +188,79 @@ nav a {
 }
 .footerText {
     width: 40%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .hero {
+        /* background-image: none; */
+    }
+    .heroContent {
+        padding: 10px 10px;
+    }
+    .heroMainText {
+        width: 100%;
+        padding-top: 60px;
+    }
+    .heroCards {
+        padding-top: 60px;
+    }
+    .card {
+        box-shadow: none;
+        margin-bottom: 10px;
+    }
+    .whyUsContent {
+        padding: 10px 10px;
+    }
+    .workingContent {
+        padding: 10px 10px;
+    }
+    .workRow {
+        width: 80%;
+        margin: auto;
+    }
+    .workCard {
+        box-shadow: none;
+        margin-bottom: 20px;
+    }
+    .advertisersContent {
+        padding: 10px 10px;
+        flex-direction: column;
+    }
+    .stores {
+        padding-bottom: 20px;
+    }
+    .advertisementsRight {
+        padding: 0;
+    }
+    .advertisementsRight img {
+        height: 300px;
+    }
+    .adArrow {
+        display: none;
+    }
+    .agencies, .publishersContent {
+        padding: 10px 10px;
+    }
+    .agenciesContent {
+        padding: 10px 10px;
+    }
+    .factsContent {
+        padding: 10px 10px;
+    }
+    .factCardContent {
+        padding-bottom: 20px;
+    }
+    .factsLine {
+        width: 50%;
+        margin: auto;
+    }
+    .map {
+        background-image: none;
+        padding: 20px 20px;
+    }
+    .agenciesTop, .advertisersLeft, .publishersTop, .factsSub, .footerText, .workingSub, .agenciesSub, .publishersSub {
+        width: 100%;
+        text-align: justify;
+    }
 }
